@@ -1,0 +1,13 @@
+{
+	"extends": "./tsconfig.json",
+	"compilerOptions": {
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"noEmit": false,
+		"isolatedModules": false,
+		"outDir": ".config",
+		"declaration": false,
+		"sourceMap": false
+	},
+	"include": ["webpack.config.ts"]
+}

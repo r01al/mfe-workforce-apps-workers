@@ -1,0 +1,22 @@
+{
+	"name": "@workforce/workers",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "tsc -p tsconfig.webpack.json && webpack serve --config .config/webpack.config.js --mode development",
+		"build": "tsc -p tsconfig.webpack.json && webpack --config .config/webpack.config.js --mode production",
+		"typecheck": "tsc -p tsconfig.json",
+		"start": "node server.ts",
+		"heroku-postbuild": "npm run build"
+	},
+	"engines": { "node": ">=24 <25", "npm": ">=10" },
+	"dependencies": { "@r01al/mfe-workforce-common-client": "^1.0.0", "@r01al/mfe-workforce-common-server": "^1.0.0", "lucide-react": "^0.542.0" },
+	"peerDependencies": { "bulma": "^1.0.4", "react": "^19.1.1", "react-dom": "^19.1.1", "react-router-dom": "^7.8.2" },
+	"devDependencies": {
+		"@types/node": "^24.3.0",
+		"@types/react": "^19.1.12", "@types/react-dom": "^19.1.9", "react": "^19.1.1", "react-dom": "^19.1.1",
+		"react-router-dom": "^7.8.2",
+		"typescript": "^5.9.2", "webpack": "^5.101.3", "webpack-cli": "^6.0.1", "webpack-dev-server": "^6.0.0"
+	}
+}
