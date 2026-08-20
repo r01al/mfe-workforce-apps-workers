@@ -6,4 +6,8 @@ export default (environment: Record<string, unknown>, argv: BuildArguments) => c
 	appDirectory,
 	port: 3005,
 	exposes: { './Workers': './src/Workers' },
+	standalone: {
+		entry: './src/dev.ts',
+		title: 'Workforce Workers',
+	},
 }, environment, argv);
